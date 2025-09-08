@@ -1,0 +1,40 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadata -->
+    <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+    <meta property="og:title" content="{{ page.title | default: site.title }} | {{ site.title }}" />
+    <meta property="og:description" content="{{ page.description | default: site.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:site_name" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ site.url | append: site.baseurl }}/assets/img/{{ page.logo_share | default: 'logo-share.webp' }}" />
+    <meta itemprop="name" content="{{ page.title | default: site.title }}">
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+    <meta itemprop="description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page.title | default: site.title }} | {{ site.title }}" />
+    <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}" />
+    <meta property="twitter:image" content="{{ site.url | append: site.baseurl }}/assets/img/{{ page.logo_share | default: 'logo-share.webp' }}" />
+
+    <!-- Favicons -->
+    <link rel="canonical" href="{{ site.url }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
+    <script src="/assets/libs/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Main -->
+    <script src="/assets/js/main.js"></script>
+</head>

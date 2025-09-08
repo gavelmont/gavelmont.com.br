@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+{% include head.html %}
+
+<body class="bg-dark h-100 w-100">
+    <div class="page-content text-white {% if page.content_thin %}page-content-thin{% endif %}">
+        {{ content }}
+    </div>
+</body>
+
+</html>

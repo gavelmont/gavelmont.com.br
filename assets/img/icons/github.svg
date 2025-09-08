@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="256px"
+   height="256px"
+   viewBox="0 0 24 24"
+   fill="#ffffff"
+   stroke="#ffffff"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="github.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.8478689"
+     inkscape:cx="143.40844"
+     inkscape:cy="113.10326"
+     inkscape:window-width="1600"
+     inkscape:window-height="835"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SVGRepo_iconCarrier" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round" />
+  <g
+     id="SVGRepo_iconCarrier">
+    <title
+       id="title4">github</title>
+    <path
+       d="M 12.028415,0.95735328 A 11.318521,11.318521 0 0 0 8.4517625,23.028469 c 0.565926,0.09055 0.7470225,-0.260326 0.7470225,-0.565926 v -1.91283 C 6.0635546,21.228824 5.3957618,19.066987 5.3957618,19.066987 A 3.0446822,3.0446822 0 0 0 4.1054504,17.369208 C 3.075465,16.66746 4.18468,16.690097 4.18468,16.690097 a 2.3768894,2.3768894 0 0 1 1.7317338,1.131852 2.433482,2.433482 0 0 0 3.2936897,0.939437 2.4448005,2.4448005 0 0 1 0.7130668,-1.516681 C 7.5010068,16.995698 4.8071987,16.022305 4.8071987,11.709948 A 4.3802677,4.3802677 0 0 1 5.9390509,8.6426291 4.0520305,4.0520305 0 0 1 6.0522361,5.6545396 c 0,0 0.9507557,-0.3056001 3.1125933,1.131852 a 10.899736,10.899736 0 0 1 5.6592606,0 c 2.161838,-1.4600891 3.112593,-1.131852 3.112593,-1.131852 a 4.0520305,4.0520305 0 0 1 0.113185,2.9880895 4.3802677,4.3802677 0 0 1 1.131852,3.0673189 c 0,4.323674 -2.648533,5.274431 -5.172564,5.557394 a 2.7051266,2.7051266 0 0 1 0.780978,2.093926 v 3.101275 c 0,0.3056 0.181096,0.667793 0.758341,0.565926 A 11.318521,11.318521 0 0 0 12.028415,0.95735328 Z"
+       id="path8"
+       style="stroke-width:1.13185" />
+  </g>
+</svg>

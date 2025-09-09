@@ -161,7 +161,7 @@ header_menu:
     <div id="perguntas-frequentes" class="py-5 d-flex flex-column align-items-center" style="background: url('/assets/img/biblioteca.webp');">
         <h2 data-aos="fade-up" class="text-center my-5 py-5 max-width">PERGUNTAS FREQUENTES</h2>
         <div data-aos="fade-up" class="mb-5 pb-4 max-width">
-            <h3>01. Como a Gavelmont foi fundada e qual a sua missão?</h3>
+            <h3 class="mb-4">01. Como a Gavelmont foi fundada e qual a sua missão?</h3>
             <p>
                 A Gavelmont foi fundada em Santa Catarina por três figuras: Fabio, João e Astral,
                 que se uniram com a convicção de que a criação de jogos poderia transformar vidas.
@@ -172,7 +172,7 @@ header_menu:
             </p>
         </div>
         <div data-aos="fade-up" class="mb-5 pb-4 max-width">
-            <h3>02. O que são as Casas de Gavelmont e como elas são estruturadas?</h3>
+            <h3 class="mb-4">02. O que são as Casas de Gavelmont e como elas são estruturadas?</h3>
             <p>
                 As Casas de Gavelmont são agrupamentos rituais criados pelos Mestres da escola
                 para organizar o aprendizado e as provações.
@@ -184,7 +184,7 @@ header_menu:
             </p>
         </div>
         <div data-aos="fade-up" class="mb-5 pb-4 max-width">
-            <h3>03. Quais desafios os aprendizes podem esperar em Gavelmont?</h3>
+            <h3 class="mb-4">03. Quais desafios os aprendizes podem esperar em Gavelmont?</h3>
             <p class="mb-0">
                 Os aprendizes de Gavelmont enfrentam desafios projetados para testar suas habilidades,
                 coragem e capacidade de colaboração. Esses desafios variam de acordo com cada Casa:
@@ -203,7 +203,7 @@ header_menu:
         <div data-aos="fade" class="max-width">
             <div class="d-flex flex-column flex-md-row">
                 <div>
-                    <h4 class="mb-4">GAVELMONT ACADEMY</h4>
+                    <h3 class="mb-4">GAVELMONT ACADEMY</h3>
                     <p class="pr-5 about">
                         Nascida do juramento de três fundadores, a Gavelmont é uma escola e um movimento cultural.
                         Nossa missão é transformar talentos solitários em uma comunidade unida de criadores de jogos.
@@ -212,10 +212,10 @@ header_menu:
                     </p>
                 </div>
 
-                <div class="d-none d-md-flex flex-column" style="min-width: 128px;">
-                    <h4 class="mb-4">LINKS RÁPIDOS</h4>
+                <div class="d-none d-md-flex flex-column" style="min-width: 256px;">
+                    <h3 class="mb-4">LINKS RÁPIDOS</h3>
                     {% for item in page.header_menu %}
-                        <a href="{{ item.url }}">{{ item.name }}</a>
+                        <a class="my-2" href="{{ item.url }}">{{ item.name }}</a>
                     {% endfor %}
                 </div>
             </div>

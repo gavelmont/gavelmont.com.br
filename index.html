@@ -40,7 +40,7 @@ header_menu:
             </div>
         </div>
 
-        <h1 class="text-center my-5 pt-5 max-width" data-aos="fade-up">O Chamado de <br> Gavelmont</h1>
+        <h1 class="text-center my-5 pt-5 max-width" data-aos="fade-up">O CHAMADO DE <br> GAVELMONT</h1>
         <p class="text-center my-5 pb-5 max-width" data-aos="fade-up">A escola que é um santuário.<br> As casas, seus pilares.<br> A união, seu poder.</p>
     </div>
 
@@ -49,7 +49,7 @@ header_menu:
     <!-- Origem e Missão -->
     <div id="origem-e-missao" class="d-flex flex-column align-items-center" style="background: url('/assets/img/bruxos.webp');">
         <div class="max-width my-5 pt-5 w-100 d-inline-flex align-items-center justify-content-evenly">
-            <h2 data-aos="fade-up">A Origem e<br> a Missão</h2>
+            <h2 data-aos="fade-up">A ORIGEM E<br> A MISSÃO</h2>
             <img class="d-none d-md-block" data-aos="fade-up" src="/assets/img/brasao.webp" alt="Brasão" style="height: 256px;">
         </div>
         <div class="pb-5 max-width">
@@ -75,7 +75,7 @@ header_menu:
             </p>
         </div>
 
-        <h2 data-aos="fade-up" class="text-center max-width my-5 pt-5">As quatros casas de Gavelmont</h2>
+        <h2 data-aos="fade-up" class="text-center max-width my-5 pt-5">AS QUATROS CASAS DE GAVELMONT</h2>
         <p data-aos="fade-up" class="text-center max-width">
             Com a visão dos fundadores firmada, os mestres transformaram os pilares em casas:
             agrupamentos rituais que organizam aprendizado, tributos e provações.
@@ -142,7 +142,7 @@ header_menu:
 
     <!-- Comunidade -->
     <div class="py-5 d-flex flex-column align-items-center" id="comunidade" style="background: url('/assets/img/castelo-2.webp');">
-        <h2 data-aos="fade-up" class="text-center mt-5 pt-5 max-width">O Santuário de Gavelmont</h2>
+        <h2 data-aos="fade-up" class="text-center mt-5 pt-5 max-width">O SANTUÁRIO DE GAVELMONT</h2>
         <p data-aos="fade-up" class="text-center my-5 pb-5 max-width">
             O castelo de Gavelmont ergue-se sobre uma elevação onde a ponte se curva como arco de convocação.
             É ao mesmo tempo arquitetura e símbolo: salões para prática, torres de criação,
@@ -199,22 +199,27 @@ header_menu:
     <hr>
 
     <!-- Footer -->
-    <div class="d-inline-flex py-5" style="background: url('/assets/img/castelo-3.webp'); background-size: contain !important; background-position: bottom;">
-        <div data-aos="fade" class="col-8">
-            <h3 data-aos="fade">GAVELMONT ACADEMY</h3>
-            <p class="mb-5">
-                Nascida do juramento de três fundadores, a Gavelmont é uma escola e um movimento cultural.
-                Nossa missão é transformar talentos solitários em uma comunidade unida de criadores de jogos.
-                Erguida sobre valores como criatividade e pensamento filosófico, somos um farol que guia
-                o "caminho estreito da luz" para todos aqueles que têm a intenção genuína de criar.
-            </p>
-            <p>Gavelmont © Copyright 2025 — Todos os direitos reservados</p>
-        </div>
-        <div data-aos="fade" class="col-4 d-flex flex-column">
-            <h3>LINKS RÁPIDOS</h3>
-            {% for item in page.header_menu %}
-                <a href="{{ item.url }}">{{ item.name }}</a>
-            {% endfor %}
+    <div class="d-flex flex-column align-items-center py-5" style="background: url('/assets/img/castelo-3.webp'); background-size: contain !important; background-position: bottom;">
+        <div data-aos="fade" class="max-width">
+            <div class="d-flex flex-column flex-md-row">
+                <div>
+                    <h4>GAVELMONT ACADEMY</h4>
+                    <p class="pr-5">
+                        Nascida do juramento de três fundadores, a Gavelmont é uma escola e um movimento cultural.
+                        Nossa missão é transformar talentos solitários em uma comunidade unida de criadores de jogos.
+                        Erguida sobre valores como criatividade e pensamento filosófico, somos um farol que guia
+                        o "caminho estreito da luz" para todos aqueles que têm a intenção genuína de criar.
+                    </p>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <h4>LINKS RÁPIDOS</h4>
+                    {% for item in page.header_menu %}
+                        <a href="{{ item.url }}">{{ item.name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <p class="mt-4">Gavelmont © Copyright 2025 — Todos os direitos reservados</p>
         </div>
     </div>
 </main>

@@ -26,6 +26,16 @@
     src: url(/assets/fonts/Metamorphous-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'GazpachoBold';
+    src: url(/assets/fonts/Gazpacho-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'GazpachoRegular';
+    src: url(/assets/fonts/Gazpacho-Regular.ttf);
+}
+
 div {
     position: relative;
     background-size: cover !important;
@@ -50,13 +60,13 @@ h1, h2 {
 }
 
 p {
-    font-family: gazpacho,serif;
-    font-size: 1.4rem;
+    font-family: 'GazpachoRegular';
+    font-size: 1.2rem;
     margin-bottom: 2rem !important;
 }
 
-h3 {
-    font-family: gazpacho,serif;
+h3, h4 {
+    font-family: 'GazpachoBold';
     font-weight: 700 !important;
     text-shadow: var(--text-shadow);
 }
@@ -71,7 +81,7 @@ hr {
 
 a {
     font-size: 18px;
-    font-family: gazpacho,serif;
+    font-family: 'GazpachoBold';
     font-weight: 700;
     text-decoration: none !important;
     color: white !important;
@@ -132,7 +142,7 @@ a:hover {
     }
 
     .button-join {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 }
 

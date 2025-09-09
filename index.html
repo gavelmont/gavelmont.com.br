@@ -5,55 +5,67 @@ discord_link: https://discord.com/invite/ccWJbhXJ
 header_menu:
     - name: Início
       url: #inicio
+      color: var(--color-title)
     - name: Origem e Missão
       url: #origem-e-missao
+      color: white
     - name: Casas
       url: #casas
+      color: white
     - name: Comunidade
       url: #comunidade
+      color: white
     - name: Perguntas Frequentes
       url: #perguntas-frequentes
+      color: white
 ---
 
-<main>
+<main class="bg-black">
     <!-- Início -->
     <div id="inicio" style="background: url('/assets/img/castelo-1.webp');">
         <!-- Header -->
-        <div class="w-100 d-inline-flex justify-content-around align-items-center">
+        <div class="w-100 my-5 d-inline-flex justify-content-evenly align-items-center">
+            <img src="/assets/img/brasao.webp" alt="Brasão" style="width: 64px;">
             {% for item in page.header_menu %}
-                <a href="{{ item.url }}">{{ item.name }}</a>
+            <a href="{{ item.url }}" style="color: {{ item.color }} !important">{{ item.name }}</a>
             {% endfor %}
+            <div></div>
         </div>
 
-        <h1 class="text-center">O Chamado de Gavelmont</h1>
-        <p class="text-center mb-0">A escola que é um santuário. As casas, seus pilares. A união, seu poder.</p>
+        <h1 class="text-center my-5 pt-5">O Chamado de Gavelmont</h1>
+        <p class="text-center my-5 pb-5">A escola que é um santuário.<br> As casas, seus pilares.<br> A união, seu poder.</p>
     </div>
 
     <hr>
 
     <!-- Origem e Missão -->
     <div id="origem-e-missao" style="background: url('/assets/img/bruxos.webp');">
-        <h2>A Origem e a Missão</h2>
-        <p>
-            Numa noite enluarada na Catedral de Maringá, três vultos cruzaram uma ponte antiga
-            e trocaram juramentos: Fabio, João e Astral. Cada um trazia um dom e uma convicção:
-            Fabio sonhava com redes de colaboração que ligassem criadores, João via pontes entre
-            técnica e arte e Astral pressentia uma cultura onde narrativas e filosofia guiariam o ofício.
-            Unidos pelas mesmas inquietações e pela certeza de que a criação de jogos poderia transformar vidas,
-            eles assinaram um pacto simbólico: erguer uma escola que fosse ao mesmo tempo oficina,
-            santuário e movimento cultural.
-        </p>
-        <p>
-            A imagem fundacional da academia mostra três figuras reunidas. Embora a fundação tenha nascido desse trio,
-            o funcionamento prático e o cultivo diário dos ofícios ficaram a cargo de uma geração de mestres artesãos
-            e guias que conduzem cada pilar da escola.
-        </p>
-        <p>
-            A missão que Fabio, João e Astral legaram foi simples e profunda: transformar talentos solitários
-            em uma comunidade unida de criadores e desenvolvedores por todo o Brasil.
-            Gavelmont foi erguida sobre quatro valores-cardinais: criatividade, intuição, expressividade
-            e pensamento filosófico, princípios que orientam tanto aulas quanto ritos e festivais internos.
-        </p>
+        <div class="my-5 pt-5 w-100 d-inline-flex align-items-center justify-content-around">
+            <h2>A Origem e<br> a Missão</h2>
+            <img src="/assets/img/brasao.webp" alt="Brasão" style="height: 256px;">
+        </div>
+        <div class="w-75">
+            <p>
+                Numa noite enluarada na Catedral de Maringá, três vultos cruzaram uma ponte antiga
+                e trocaram juramentos: Fabio, João e Astral. Cada um trazia um dom e uma convicção:
+                Fabio sonhava com redes de colaboração que ligassem criadores, João via pontes entre
+                técnica e arte e Astral pressentia uma cultura onde narrativas e filosofia guiariam o ofício.
+                Unidos pelas mesmas inquietações e pela certeza de que a criação de jogos poderia transformar vidas,
+                eles assinaram um pacto simbólico: erguer uma escola que fosse ao mesmo tempo oficina,
+                santuário e movimento cultural.
+            </p>
+            <p>
+                A imagem fundacional da academia mostra três figuras reunidas. Embora a fundação tenha nascido desse trio,
+                o funcionamento prático e o cultivo diário dos ofícios ficaram a cargo de uma geração de mestres artesãos
+                e guias que conduzem cada pilar da escola.
+            </p>
+            <p>
+                A missão que Fabio, João e Astral legaram foi simples e profunda: transformar talentos solitários
+                em uma comunidade unida de criadores e desenvolvedores por todo o Brasil.
+                Gavelmont foi erguida sobre quatro valores-cardinais: criatividade, intuição, expressividade
+                e pensamento filosófico, princípios que orientam tanto aulas quanto ritos e festivais internos.
+            </p>
+        </div>
 
         <h2 class="text-center">As quatros casas de Gavelmont</h2>
         <p class="text-center">

@@ -4,20 +4,16 @@ title: Gavelmont
 discord_link: https://discord.com/invite/ccWJbhXJ
 header_menu:
     - name: Início
-      url: #inicio
+      url: '#inicio'
       color: var(--color-title)
     - name: Origem e Missão
-      url: #origem-e-missao
-      color: white
+      url: '#origem-e-missao'
     - name: Casas
-      url: #casas
-      color: white
+      url: '#casas'
     - name: Comunidade
-      url: #comunidade
-      color: white
+      url: '#comunidade'
     - name: Perguntas Frequentes
-      url: #perguntas-frequentes
-      color: white
+      url: '#perguntas-frequentes'
 ---
 
 <main class="bg-black">
@@ -27,7 +23,11 @@ header_menu:
         <div class="w-100 my-5 d-inline-flex justify-content-evenly align-items-center">
             <img src="/assets/img/brasao.webp" alt="Brasão" style="width: 64px;">
             {% for item in page.header_menu %}
-            <a href="{{ item.url }}" style="color: {{ item.color }} !important">{{ item.name }}</a>
+            <a href="{{ item.url }}"
+                {%if item.color %}
+                    style="color: {{ item.color }} !important"
+                {% endif %}
+                >{{ item.name }}</a>
             {% endfor %}
             <div></div>
         </div>

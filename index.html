@@ -18,33 +18,41 @@ header_menu:
 
 <main class="bg-black">
     <!-- Início -->
-    <div id="inicio" class="d-flex flex-column align-items-center justify-content-evenly" style="background: url('/assets/img/castelo-1.webp'); min-height: 100vh;">
-        <!-- Header -->
-        <div data-aos="fade-down" class="w-100 my-5 d-inline-flex justify-content-evenly align-items-center">
-            <img src="/assets/img/brasao.webp" alt="Brasão" style="width: 64px;">
-            {% for item in page.header_menu %}
-            <a href="{{ item.url }}"
-                {%if item.color %}
-                    style="color: {{ item.color }} !important"
-                {% endif %}
-                >{{ item.name }}</a>
-            {% endfor %}
-            <div></div>
+    <div id="inicio" class="d-flex flex-column align-items-center justify-content-between" style="background: url('/assets/img/castelo-1.webp'); min-height: 100vh;">
+        <div class="w-100 max-width" data-aos="fade-down">
+            <div class="w-100 d-flex d-md-none justify-content-start">
+                <a id="menu_button" href="#" style="font-size: 2rem;">☰</a>
+            </div>
+
+            <!-- Navbar -->
+            <div id="menu_items" class="w-100">
+                <div class="w-100 d-flex flex-column flex-md-row justify-content-evenly align-items-center">
+                    <img class="d-none d-md-block" src="/assets/img/brasao.webp" alt="Brasão" style="width: 64px;">
+                    {% for item in page.header_menu %}
+                    <a href="{{ item.url }}"
+                        {%if item.color %}
+                            style="color: {{ item.color }} !important"
+                        {% endif %}
+                        >{{ item.name }}</a>
+                    {% endfor %}
+                    <div></div>
+                </div>
+            </div>
         </div>
 
-        <h1 class="text-center my-5 pt-5" data-aos="fade-up">O Chamado de Gavelmont</h1>
-        <p class="text-center my-5 pb-5" data-aos="fade-up">A escola que é um santuário.<br> As casas, seus pilares.<br> A união, seu poder.</p>
+        <h1 class="text-center my-5 pt-5 max-width" data-aos="fade-up">O Chamado de <br> Gavelmont</h1>
+        <p class="text-center my-5 pb-5 max-width" data-aos="fade-up">A escola que é um santuário.<br> As casas, seus pilares.<br> A união, seu poder.</p>
     </div>
 
     <hr>
 
     <!-- Origem e Missão -->
-    <div id="origem-e-missao" style="background: url('/assets/img/bruxos.webp');">
-        <div class="my-5 pt-5 w-100 d-inline-flex align-items-center justify-content-evenly">
+    <div id="origem-e-missao" class="d-flex flex-column align-items-center" style="background: url('/assets/img/bruxos.webp');">
+        <div class="max-width my-5 pt-5 w-100 d-inline-flex align-items-center justify-content-evenly">
             <h2 data-aos="fade-up">A Origem e<br> a Missão</h2>
-            <img data-aos="fade-up" src="/assets/img/brasao.webp" alt="Brasão" style="height: 256px;">
+            <img class="d-none d-md-block" data-aos="fade-up" src="/assets/img/brasao.webp" alt="Brasão" style="height: 256px;">
         </div>
-        <div class="w-75 pb-5">
+        <div class="pb-5 max-width">
             <p data-aos="fade-up">
                 Numa noite enluarada na Catedral de Maringá, três vultos cruzaram uma ponte antiga
                 e trocaram juramentos: Fabio, João e Astral. Cada um trazia um dom e uma convicção:
@@ -67,8 +75,8 @@ header_menu:
             </p>
         </div>
 
-        <h2 data-aos="fade-up" class="text-center my-5 pt-5">As quatros casas de Gavelmont</h2>
-        <p data-aos="fade-up" class="text-center">
+        <h2 data-aos="fade-up" class="text-center max-width my-5 pt-5">As quatros casas de Gavelmont</h2>
+        <p data-aos="fade-up" class="text-center max-width">
             Com a visão dos fundadores firmada, os mestres transformaram os pilares em casas:
             agrupamentos rituais que organizam aprendizado, tributos e provações.
             Cada casa foi encabeçada por um dos mestres e incorporou um símbolo e um ethos próprios.
@@ -82,8 +90,8 @@ header_menu:
 
     <!-- Casas -->
     <div id="casas" class="py-10" style="background: url('/assets/img/arkanum.webp');">
-        <h2 class="mb-5" data-aos="fade-up">CASA ARKANUM</h2>
-        <p data-aos="fade-up">
+        <h2 class="mb-5 max-width" data-aos="fade-up">CASA ARKANUM</h2>
+        <p data-aos="fade-up" class="max-width">
             Arkanum é o refúgio dos artífices da ordem, onde o código se torna magia e a lógica, um oráculo.
             Seus aprendizes não apenas constroem sistemas, mas tecem o próprio tecido da realidade do jogo.
             A coruja mecânica, seu emblema, simboliza a visão que perfura as camadas da engenharia,
@@ -95,8 +103,8 @@ header_menu:
     <hr>
 
     <div class="py-10" style="background: url('/assets/img/sonori.webp');">
-        <h2 class="mb-5" data-aos="fade-up">CASA SONORI</h2>
-        <p data-aos="fade-up">
+        <h2 class="mb-5 max-width" data-aos="fade-up">CASA SONORI</h2>
+        <p data-aos="fade-up" class="max-width">
             Sonori é o santuário daqueles que dão voz ao mundo, moldando as emoções com o poder do som.
             Aqui, os murmúrios de uma floresta, a canção de uma espada em combate e a sinfonia de um
             momento de triunfo são todos partituras a serem orquestradas. O grifo cantor, seu símbolo,
@@ -107,8 +115,8 @@ header_menu:
     <hr>
 
     <div class="py-10" style="background: url('/assets/img/illustrae.webp');">
-        <h2 class="mb-5" data-aos="fade-up">CASA ILLUSTRAE</h2>
-        <p data-aos="fade-up">
+        <h2 class="mb-5 max-width" data-aos="fade-up">CASA ILLUSTRAE</h2>
+        <p data-aos="fade-up" class="max-width">
             Illustrae é o ateliê dos olhos, o lar dos criadores de visões. A fênix de tinta, seu emblema,
             representa a eterna renovação criativa. Pois para cada projeto, uma velha ideia deve morrer
             para que uma nova possa renascer em cores e formas vibrantes.
@@ -120,8 +128,8 @@ header_menu:
     <hr>
 
     <div class="py-10" style="background: url('/assets/img/narrath.webp');">
-        <h2 class="mb-5" data-aos="fade-up">CASA NARRATH</h2>
-        <p data-aos="fade-up">
+        <h2 class="mb-5 max-width" data-aos="fade-up">CASA NARRATH</h2>
+        <p data-aos="fade-up" class="max-width">
             Narrath é a biblioteca viva onde as histórias se entrelaçam e os mitos são moldados.
             O dragão bibliotecário, seu guardião, não apenas vela por manuscritos antigos,
             mas também por novos enredos que aguardam ser contados.
@@ -133,9 +141,9 @@ header_menu:
     <hr>
 
     <!-- Comunidade -->
-    <div class="py-5" id="comunidade" style="background: url('/assets/img/castelo-2.webp');">
-        <h2 data-aos="fade-up" class="text-center mt-5 pt-5">O Santuário de Gavelmont</h2>
-        <p data-aos="fade-up" class="text-center my-5 pb-5">
+    <div class="py-5 d-flex flex-column align-items-center" id="comunidade" style="background: url('/assets/img/castelo-2.webp');">
+        <h2 data-aos="fade-up" class="text-center mt-5 pt-5 max-width">O Santuário de Gavelmont</h2>
+        <p data-aos="fade-up" class="text-center my-5 pb-5 max-width">
             O castelo de Gavelmont ergue-se sobre uma elevação onde a ponte se curva como arco de convocação.
             É ao mesmo tempo arquitetura e símbolo: salões para prática, torres de criação,
             jardins de protótipos e bibliotecas vivas. Apenas quem segue o "caminho estreito da luz"
@@ -150,9 +158,9 @@ header_menu:
     <hr>
 
     <!-- Perguntas Frequentes -->
-    <div id="perguntas-frequentes" class="py-5" style="background: url('/assets/img/biblioteca.webp');">
-        <h2 data-aos="fade-up" class="text-center my-5 py-5">PERGUNTAS FREQUENTES</h2>
-        <div data-aos="fade-up" class="mb-5">
+    <div id="perguntas-frequentes" class="py-5 d-flex flex-column align-items-center" style="background: url('/assets/img/biblioteca.webp');">
+        <h2 data-aos="fade-up" class="text-center my-5 py-5 max-width">PERGUNTAS FREQUENTES</h2>
+        <div data-aos="fade-up" class="mb-5 pb-4 max-width">
             <h3>01. Como a Gavelmont foi fundada e qual a sua missão?</h3>
             <p>
                 A Gavelmont foi fundada em Santa Catarina por três figuras: Fabio, João e Astral,
@@ -163,7 +171,7 @@ header_menu:
                 criatividade, intuição, expressividade e pensamento filosófico.
             </p>
         </div>
-        <div data-aos="fade-up" class="mb-5">
+        <div data-aos="fade-up" class="mb-5 pb-4 max-width">
             <h3>02. O que são as Casas de Gavelmont e como elas são estruturadas?</h3>
             <p>
                 As Casas de Gavelmont são agrupamentos rituais criados pelos Mestres da escola
@@ -175,7 +183,7 @@ header_menu:
                 Por fim, a Casa Narrath, liderada por Lucas, é o lar dos contadores de histórias e dramaturgos.
             </p>
         </div>
-        <div data-aos="fade-up" class="mb-5">
+        <div data-aos="fade-up" class="mb-5 pb-4 max-width">
             <h3>03. Quais desafios os aprendizes podem esperar em Gavelmont?</h3>
             <p class="mb-0">
                 Os aprendizes de Gavelmont enfrentam desafios projetados para testar suas habilidades,

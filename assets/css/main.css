@@ -26,10 +26,6 @@
     src: url(/assets/fonts/Metamorphous-Regular.ttf);
 }
 
-main > div {
-    padding: 2rem;
-}
-
 div {
     position: relative;
     background-size: cover !important;
@@ -53,17 +49,9 @@ h1, h2 {
     text-shadow: var(--text-shadow);
 }
 
-h1 {
-    font-size: 6rem !important;
-}
-
-h2 {
-    font-size: 5rem !important;
-}
-
 p {
     font-family: gazpacho,serif;
-    font-size: 24px;
+    font-size: 1.4rem;
     margin-bottom: 2rem !important;
 }
 
@@ -87,7 +75,6 @@ a {
     font-weight: 700;
     text-decoration: none !important;
     color: white !important;
-    text-shadow: var(--text-shadow);
 }
 
 a:hover {
@@ -113,4 +100,38 @@ a:hover {
 .py-10 {
     padding-top: 10rem !important;
     padding-bottom: 10rem !important;
+}
+
+/* Telas pequenas */
+@media only screen and (max-width: 767px) {
+    main > div {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 10vw !important;
+    }
+
+    h2 {
+        font-size: 10vw !important;
+    }
+}
+
+/* Telas grandes */
+@media only screen and (min-width: 768px) {
+    main > div {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 6rem !important;
+    }
+
+    h2 {
+        font-size: 5rem !important;
+    }
+
+    .max-width {
+        max-width: 900px;
+    }
 }

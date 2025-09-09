@@ -2,4 +2,78 @@
 ---
 :root {
     --swiper-theme-color: #ffffffc5 !important;
+    --color-title: #FFB300;
+    --text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+}
+
+@font-face {
+    font-family: 'CinzelDecorative';
+    src: url(/assets/fonts/CinzelDecorative-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'CormorantUnicase';
+    src: url(/assets/fonts/CormorantUnicase-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url(/assets/fonts/MedievalSharp-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Metamorphous';
+    src: url(/assets/fonts/Metamorphous-Regular.ttf);
+}
+
+main > div {
+    padding: 1rem;
+}
+
+div {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position-x: center !important;
+}
+
+h1, h2 {
+    font-family: 'CinzelDecorative';
+    color: var(--color-title) !important;
+    text-shadow: var(--text-shadow);
+}
+
+p {
+    font-family: gazpacho,serif;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: gazpacho,serif;
+    font-weight: 700 !important;
+    text-shadow: var(--text-shadow);
+}
+
+hr {
+    height: 28px;
+    background: linear-gradient(90deg, #FFB300 0%, #8B0000 100%);
+    border-style: none !important;
+    opacity: 100% !important;
+    margin: 0 !important;
+}
+
+a {
+    font-size: 18px;
+    font-family: gazpacho,serif;
+    font-weight: 700;
+    text-decoration: none !important;
+    color: white !important;
+    text-shadow: var(--text-shadow);
+}
+
+a:hover {
+    color: var(--color-title) !important;
+}
+
+.text-shadow {
+    text-shadow: var(--text-shadow);
 }

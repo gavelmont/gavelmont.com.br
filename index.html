@@ -15,172 +15,174 @@ header_menu:
       url: #perguntas-frequentes
 ---
 
-<!-- Header -->
-<div class="w-100 d-inline-flex justify-content-around align-items-center">
-    {% for item in page.header_menu %}
-        <a href="{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
-</div>
+<main>
+    <!-- Início -->
+    <div id="inicio" style="background: url('/assets/img/castelo-1.webp');">
+        <!-- Header -->
+        <div class="w-100 d-inline-flex justify-content-around align-items-center">
+            {% for item in page.header_menu %}
+                <a href="{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+        </div>
 
-<!-- Início -->
-<div id="inicio">
-    <h1 class="text-center">O Chamado de Gavelmont</h1>
-    <p class="text-center">A escola que é um santuário. As casas, seus pilares. A união, seu poder.</p>
-</div>
+        <h1 class="text-center">O Chamado de Gavelmont</h1>
+        <p class="text-center mb-0">A escola que é um santuário. As casas, seus pilares. A união, seu poder.</p>
+    </div>
 
-<hr>
+    <hr>
 
-<!-- Origem e Missão -->
-<div id="origem-e-missao">
-    <h2>A Origem e a Missão</h2>
-    <p>
-        Numa noite enluarada na Catedral de Maringá, três vultos cruzaram uma ponte antiga
-        e trocaram juramentos: Fabio, João e Astral. Cada um trazia um dom e uma convicção:
-        Fabio sonhava com redes de colaboração que ligassem criadores, João via pontes entre
-        técnica e arte e Astral pressentia uma cultura onde narrativas e filosofia guiariam o ofício.
-        Unidos pelas mesmas inquietações e pela certeza de que a criação de jogos poderia transformar vidas,
-        eles assinaram um pacto simbólico: erguer uma escola que fosse ao mesmo tempo oficina,
-        santuário e movimento cultural.
-    </p>
-    <p>
-        A imagem fundacional da academia mostra três figuras reunidas. Embora a fundação tenha nascido desse trio,
-        o funcionamento prático e o cultivo diário dos ofícios ficaram a cargo de uma geração de mestres artesãos
-        e guias que conduzem cada pilar da escola.
-    </p>
-    <p>
-        A missão que Fabio, João e Astral legaram foi simples e profunda: transformar talentos solitários
-        em uma comunidade unida de criadores e desenvolvedores por todo o Brasil.
-        Gavelmont foi erguida sobre quatro valores-cardinais: criatividade, intuição, expressividade
-        e pensamento filosófico, princípios que orientam tanto aulas quanto ritos e festivais internos.
-    </p>
-
-    <h2 class="text-center">As quatros casas de Gavelmont</h2>
-    <p class="text-center">
-        Com a visão dos fundadores firmada, os mestres transformaram os pilares em casas:
-        agrupamentos rituais que organizam aprendizado, tributos e provações.
-        Cada casa foi encabeçada por um dos mestres e incorporou um símbolo e um ethos próprios.
-    </p>
-    <p class="text-center">
-        <a target="_blank" href="{{ page.discord_link }}">JUNTE-SE À NOSSA COMUNIDADE</a>
-    </p>
-</div>
-
-<hr>
-
-<!-- Casas -->
-<div id="casas">
-    <h2>CASA ARKANUM</h2>
-    <p>
-        Arkanum é o refúgio dos artífices da ordem, onde o código se torna magia e a lógica, um oráculo.
-        Seus aprendizes não apenas constroem sistemas, mas tecem o próprio tecido da realidade do jogo.
-        A coruja mecânica, seu emblema, simboliza a visão que perfura as camadas da engenharia,
-        revelando a beleza intrínseca da funcionalidade.
-        Para os Arkanum, cada algoritmo é uma runa, cada linha de código um feitiço.
-    </p>
-</div>
-
-<div>
-    <h2>CASA SONORI</h2>
-    <p>
-        Sonori é o santuário daqueles que dão voz ao mundo, moldando as emoções com o poder do som.
-        Aqui, os murmúrios de uma floresta, a canção de uma espada em combate e a sinfonia de um
-        momento de triunfo são todos partituras a serem orquestradas. O grifo cantor, seu símbolo,
-        eleva a melodia do coração do jogo, fazendo com que cada nota e cada efeito ecoem na alma dos que ouvem.
-    </p>
-</div>
-
-<div>
-    <h2>CASA ILLUSTRAE</h2>
-    <p>
-        Illustrae é o ateliê dos olhos, o lar dos criadores de visões. A fênix de tinta, seu emblema,
-        representa a eterna renovação criativa. Pois para cada projeto, uma velha ideia deve morrer
-        para que uma nova possa renascer em cores e formas vibrantes.
-        Os Illustrae não apenas desenham mundos; eles os habitam primeiro,
-        traduzindo o invisível em algo que pode ser visto e sentido.
-    </p>
-</div>
-
-<div>
-    <h2>CASA NARRATH</h2>
-    <p>
-        Narrath é a biblioteca viva onde as histórias se entrelaçam e os mitos são moldados.
-        O dragão bibliotecário, seu guardião, não apenas vela por manuscritos antigos,
-        mas também por novos enredos que aguardam ser contados.
-        Os membros de Narrath são bardos e arquivistas, navegando pelos rios do tempo
-        para sussurrar novos caminhos e finais, garantindo que as lendas de Gavelmont jamais se apaguem.
-    </p>
-</div>
-
-<hr>
-
-<!-- Comunidade -->
-<div id="comunidade">
-    <h2 class="text-center">O Santuário de Gavelmont</h2>
-    <p class="text-center">
-        O castelo de Gavelmont ergue-se sobre uma elevação onde a ponte se curva como arco de convocação.
-        É ao mesmo tempo arquitetura e símbolo: salões para prática, torres de criação,
-        jardins de protótipos e bibliotecas vivas. Apenas quem segue o "caminho estreito da luz"
-        percebe a ponte e atravessa para os salões do interior.
-    </p>
-
-    <p class="text-center">
-        <a target="_blank" href="{{ page.discord_link }}">JUNTE-SE À NOSSA COMUNIDADE</a>
-    </p>
-</div>
-
-<hr>
-
-<!-- Perguntas Frequentes -->
-<div id="perguntas-frequentes">
-    <h2 class="text-center">PERGUNTAS FREQUENTES</h2>
-    <h3>01. Como a Gavelmont foi fundada e qual a sua missão?</h3>
-    <p>
-        A Gavelmont foi fundada em Santa Catarina por três figuras: Fabio, João e Astral,
-        que se uniram com a convicção de que a criação de jogos poderia transformar vidas.
-        A missão que eles deixaram é transformar talentos solitários em uma comunidade unida
-        de criadores e desenvolvedores em todo o Brasil.
-        A escola é erguida sobre quatro valores principais:
-        criatividade, intuição, expressividade e pensamento filosófico.
-    </p>
-    <h3>02. O que são as Casas de Gavelmont e como elas são estruturadas?</h3>
-    <p>
-        As Casas de Gavelmont são agrupamentos rituais criados pelos Mestres da escola
-        para organizar o aprendizado e as provações.
-        Cada uma delas é liderada por um Mestre artesão e incorpora um símbolo e um ethos próprios.
-        A Casa Arkanum, liderada por Eduardo Mendes, é dedicada à engenharia e ao design técnico.
-        Sonori, com Joel, acolhe aqueles que trabalham com som e ambiência.
-        A Casa Illustrae, sob a liderança de Guilherme, é a oficina de concept artists e ilustradores.
-        Por fim, a Casa Narrath, liderada por Lucas, é o lar dos contadores de histórias e dramaturgos.
-    </p>
-    <h3>03. Quais desafios os aprendizes podem esperar em Gavelmont?</h3>
-    <p>
-        Os aprendizes de Gavelmont enfrentam desafios projetados para testar suas habilidades,
-        coragem e capacidade de colaboração. Esses desafios variam de acordo com cada Casa:
-        quebra-cabeças lógicos em Arkanum, partituras que se adaptam às emoções em Sonori,
-        quadros que ganham cor com a intenção do toque em Illustrae, e manuscritos com finais ocultos em Narrath.
-        Esses testes podem ser propostos pelos Mestres, por colegas ou ativados
-        pelos próprios Fundadores através de rituais.
-    </p>
-</div>
-
-<hr>
-
-<!-- Footer -->
-<div class="container d-inline-flex">
-    <div class="col-8">
-        <h3>GAVELMONT ACADEMY</h3>
+    <!-- Origem e Missão -->
+    <div id="origem-e-missao" style="background: url('/assets/img/bruxos.webp');">
+        <h2>A Origem e a Missão</h2>
         <p>
-            Nascida do juramento de três fundadores, a Gavelmont é uma escola e um movimento cultural.
-            Nossa missão é transformar talentos solitários em uma comunidade unida de criadores de jogos.
-            Erguida sobre valores como criatividade e pensamento filosófico, somos um farol que guia
-            o "caminho estreito da luz" para todos aqueles que têm a intenção genuína de criar.
+            Numa noite enluarada na Catedral de Maringá, três vultos cruzaram uma ponte antiga
+            e trocaram juramentos: Fabio, João e Astral. Cada um trazia um dom e uma convicção:
+            Fabio sonhava com redes de colaboração que ligassem criadores, João via pontes entre
+            técnica e arte e Astral pressentia uma cultura onde narrativas e filosofia guiariam o ofício.
+            Unidos pelas mesmas inquietações e pela certeza de que a criação de jogos poderia transformar vidas,
+            eles assinaram um pacto simbólico: erguer uma escola que fosse ao mesmo tempo oficina,
+            santuário e movimento cultural.
         </p>
-        <p>Gavelmont © Copyright 2025 — Todos os direitos reservados</p>
+        <p>
+            A imagem fundacional da academia mostra três figuras reunidas. Embora a fundação tenha nascido desse trio,
+            o funcionamento prático e o cultivo diário dos ofícios ficaram a cargo de uma geração de mestres artesãos
+            e guias que conduzem cada pilar da escola.
+        </p>
+        <p>
+            A missão que Fabio, João e Astral legaram foi simples e profunda: transformar talentos solitários
+            em uma comunidade unida de criadores e desenvolvedores por todo o Brasil.
+            Gavelmont foi erguida sobre quatro valores-cardinais: criatividade, intuição, expressividade
+            e pensamento filosófico, princípios que orientam tanto aulas quanto ritos e festivais internos.
+        </p>
+
+        <h2 class="text-center">As quatros casas de Gavelmont</h2>
+        <p class="text-center">
+            Com a visão dos fundadores firmada, os mestres transformaram os pilares em casas:
+            agrupamentos rituais que organizam aprendizado, tributos e provações.
+            Cada casa foi encabeçada por um dos mestres e incorporou um símbolo e um ethos próprios.
+        </p>
+        <p class="text-center mb-0">
+            <a target="_blank" href="{{ page.discord_link }}">JUNTE-SE À NOSSA COMUNIDADE</a>
+        </p>
     </div>
-    <div class="col-4 d-flex flex-column">
-        <h3>LINKS RÁPIDOS</h3>
-        {% for item in page.header_menu %}
-            <a href="{{ item.url }}">{{ item.name }}</a>
-        {% endfor %}
+
+    <hr>
+
+    <!-- Casas -->
+    <div id="casas" style="background: url('/assets/img/arkanum.webp');">
+        <h2>CASA ARKANUM</h2>
+        <p class="mb-0">
+            Arkanum é o refúgio dos artífices da ordem, onde o código se torna magia e a lógica, um oráculo.
+            Seus aprendizes não apenas constroem sistemas, mas tecem o próprio tecido da realidade do jogo.
+            A coruja mecânica, seu emblema, simboliza a visão que perfura as camadas da engenharia,
+            revelando a beleza intrínseca da funcionalidade.
+            Para os Arkanum, cada algoritmo é uma runa, cada linha de código um feitiço.
+        </p>
     </div>
-</div>
+
+    <div style="background: url('/assets/img/sonori.webp');">
+        <h2>CASA SONORI</h2>
+        <p class="mb-0">
+            Sonori é o santuário daqueles que dão voz ao mundo, moldando as emoções com o poder do som.
+            Aqui, os murmúrios de uma floresta, a canção de uma espada em combate e a sinfonia de um
+            momento de triunfo são todos partituras a serem orquestradas. O grifo cantor, seu símbolo,
+            eleva a melodia do coração do jogo, fazendo com que cada nota e cada efeito ecoem na alma dos que ouvem.
+        </p>
+    </div>
+
+    <div style="background: url('/assets/img/illustrae.webp');">
+        <h2>CASA ILLUSTRAE</h2>
+        <p class="mb-0">
+            Illustrae é o ateliê dos olhos, o lar dos criadores de visões. A fênix de tinta, seu emblema,
+            representa a eterna renovação criativa. Pois para cada projeto, uma velha ideia deve morrer
+            para que uma nova possa renascer em cores e formas vibrantes.
+            Os Illustrae não apenas desenham mundos; eles os habitam primeiro,
+            traduzindo o invisível em algo que pode ser visto e sentido.
+        </p>
+    </div>
+
+    <div style="background: url('/assets/img/narrath.webp');">
+        <h2>CASA NARRATH</h2>
+        <p class="mb-0">
+            Narrath é a biblioteca viva onde as histórias se entrelaçam e os mitos são moldados.
+            O dragão bibliotecário, seu guardião, não apenas vela por manuscritos antigos,
+            mas também por novos enredos que aguardam ser contados.
+            Os membros de Narrath são bardos e arquivistas, navegando pelos rios do tempo
+            para sussurrar novos caminhos e finais, garantindo que as lendas de Gavelmont jamais se apaguem.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Comunidade -->
+    <div id="comunidade" style="background: url('/assets/img/castelo-2.webp');">
+        <h2 class="text-center">O Santuário de Gavelmont</h2>
+        <p class="text-center">
+            O castelo de Gavelmont ergue-se sobre uma elevação onde a ponte se curva como arco de convocação.
+            É ao mesmo tempo arquitetura e símbolo: salões para prática, torres de criação,
+            jardins de protótipos e bibliotecas vivas. Apenas quem segue o "caminho estreito da luz"
+            percebe a ponte e atravessa para os salões do interior.
+        </p>
+
+        <p class="text-center mb-0">
+            <a target="_blank" href="{{ page.discord_link }}">JUNTE-SE À NOSSA COMUNIDADE</a>
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Perguntas Frequentes -->
+    <div id="perguntas-frequentes" style="background: url('/assets/img/biblioteca.webp');">
+        <h2 class="text-center">PERGUNTAS FREQUENTES</h2>
+        <h3>01. Como a Gavelmont foi fundada e qual a sua missão?</h3>
+        <p>
+            A Gavelmont foi fundada em Santa Catarina por três figuras: Fabio, João e Astral,
+            que se uniram com a convicção de que a criação de jogos poderia transformar vidas.
+            A missão que eles deixaram é transformar talentos solitários em uma comunidade unida
+            de criadores e desenvolvedores em todo o Brasil.
+            A escola é erguida sobre quatro valores principais:
+            criatividade, intuição, expressividade e pensamento filosófico.
+        </p>
+        <h3>02. O que são as Casas de Gavelmont e como elas são estruturadas?</h3>
+        <p>
+            As Casas de Gavelmont são agrupamentos rituais criados pelos Mestres da escola
+            para organizar o aprendizado e as provações.
+            Cada uma delas é liderada por um Mestre artesão e incorpora um símbolo e um ethos próprios.
+            A Casa Arkanum, liderada por Eduardo Mendes, é dedicada à engenharia e ao design técnico.
+            Sonori, com Joel, acolhe aqueles que trabalham com som e ambiência.
+            A Casa Illustrae, sob a liderança de Guilherme, é a oficina de concept artists e ilustradores.
+            Por fim, a Casa Narrath, liderada por Lucas, é o lar dos contadores de histórias e dramaturgos.
+        </p>
+        <h3>03. Quais desafios os aprendizes podem esperar em Gavelmont?</h3>
+        <p class="mb-0">
+            Os aprendizes de Gavelmont enfrentam desafios projetados para testar suas habilidades,
+            coragem e capacidade de colaboração. Esses desafios variam de acordo com cada Casa:
+            quebra-cabeças lógicos em Arkanum, partituras que se adaptam às emoções em Sonori,
+            quadros que ganham cor com a intenção do toque em Illustrae, e manuscritos com finais ocultos em Narrath.
+            Esses testes podem ser propostos pelos Mestres, por colegas ou ativados
+            pelos próprios Fundadores através de rituais.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <div class="d-inline-flex" style="background: url('/assets/img/castelo-3.webp');">
+        <div class="col-8">
+            <h3>GAVELMONT ACADEMY</h3>
+            <p>
+                Nascida do juramento de três fundadores, a Gavelmont é uma escola e um movimento cultural.
+                Nossa missão é transformar talentos solitários em uma comunidade unida de criadores de jogos.
+                Erguida sobre valores como criatividade e pensamento filosófico, somos um farol que guia
+                o "caminho estreito da luz" para todos aqueles que têm a intenção genuína de criar.
+            </p>
+            <p>Gavelmont © Copyright 2025 — Todos os direitos reservados</p>
+        </div>
+        <div class="col-4 d-flex flex-column">
+            <h3>LINKS RÁPIDOS</h3>
+            {% for item in page.header_menu %}
+                <a href="{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</main>

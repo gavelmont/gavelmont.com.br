@@ -1,3 +1,8 @@
+AOS.init({
+    duration: 1000,
+    delay: 200,
+});
+
 /**
  * @param {string} url
  * @returns {object}

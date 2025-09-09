@@ -31,9 +31,20 @@ main > div {
 }
 
 div {
+    position: relative;
     background-size: cover !important;
     background-attachment: fixed !important;
-    background-position-x: center !important;
+    background-position: center !important;
+    z-index: 0;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: brightness(0.7);
+    z-index: -1;
 }
 
 h1, h2 {
@@ -53,6 +64,7 @@ h2 {
 p {
     font-family: gazpacho,serif;
     font-size: 24px;
+    margin-bottom: 2rem !important;
 }
 
 h3 {
@@ -84,4 +96,21 @@ a:hover {
 
 .text-shadow {
     text-shadow: var(--text-shadow);
+}
+
+.button-join {
+    padding: 3px;
+    border: 4px double #FFFFFF;
+    background: repeat padding-box border-box 0% 0% / auto auto scroll linear-gradient(180deg, #D89D08 0%, #ff9900 100%);
+}
+
+.button-join:hover {
+    color: black !important;
+    background: #FFFFFF;
+    border: 3px double rgb(11, 47, 91);
+}
+
+.py-10 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
 }

@@ -102,6 +102,21 @@ a:hover {
     padding-bottom: 10rem !important;
 }
 
+.footer {
+    background-size: cover !important;
+    background-position: bottom !important;
+}
+
+.footer::before {
+    filter: blur(3px) brightness(0.5);
+}
+
+.footer h4,
+.footer p,
+.footer a {
+    font-size: 110% !important;
+}
+
 /* Telas pequenas */
 @media only screen and (max-width: 767px) {
     main > div {
@@ -133,5 +148,9 @@ a:hover {
 
     .max-width {
         max-width: 900px;
+    }
+
+    .footer .about {
+        margin-right: 4rem;
     }
 }

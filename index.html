@@ -199,12 +199,12 @@ header_menu:
     <hr>
 
     <!-- Footer -->
-    <div class="d-flex flex-column align-items-center py-5" style="background: url('/assets/img/castelo-3.webp'); background-size: contain !important; background-position: bottom;">
+    <div class="d-flex flex-column align-items-center py-5 footer" style="background: url('/assets/img/castelo-3.webp');">
         <div data-aos="fade" class="max-width">
             <div class="d-flex flex-column flex-md-row">
                 <div>
-                    <h4>GAVELMONT ACADEMY</h4>
-                    <p class="pr-5">
+                    <h4 class="mb-4">GAVELMONT ACADEMY</h4>
+                    <p class="pr-5 about">
                         Nascida do juramento de três fundadores, a Gavelmont é uma escola e um movimento cultural.
                         Nossa missão é transformar talentos solitários em uma comunidade unida de criadores de jogos.
                         Erguida sobre valores como criatividade e pensamento filosófico, somos um farol que guia
@@ -212,14 +212,14 @@ header_menu:
                     </p>
                 </div>
 
-                <div class="d-flex flex-column">
-                    <h4>LINKS RÁPIDOS</h4>
+                <div class="d-none d-md-flex flex-column" style="min-width: 128px;">
+                    <h4 class="mb-4">LINKS RÁPIDOS</h4>
                     {% for item in page.header_menu %}
                         <a href="{{ item.url }}">{{ item.name }}</a>
                     {% endfor %}
                 </div>
             </div>
-            <p class="mt-4">Gavelmont © Copyright 2025 — Todos os direitos reservados</p>
+            <p class="mt-4 mb-0 text-center">Gavelmont © Copyright 2025 — Todos os direitos reservados</p>
         </div>
     </div>
 </main>
